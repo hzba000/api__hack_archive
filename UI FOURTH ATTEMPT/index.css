@@ -1,0 +1,157 @@
+*{
+    box-sizing:border-box;
+}
+
+h1,h2{
+    text-align:center;
+}
+.hidden{
+    display:none;
+}
+
+p{
+    margin:0;
+}
+
+fieldset {
+    border: none;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 25px;
+    
+}
+
+legend {
+    color: black;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.js-results-holder{
+    position: relative;
+    overflow: auto;
+    height: 400px;
+    width: 400px;
+    margin-left: 2px;
+    padding: 12px;
+    margin-top: 0px;
+    left: 500px;
+    bottom: 420px;
+    
+
+}
+
+.js-search-box{
+    width:338px;
+    margin-bottom: 10px;
+
+}
+
+.navigation-buttons{
+    margin-left: 2px;
+    padding: 12px;
+    margin-top:0px;
+}
+
+.results-header{
+    margin-bottom:0px;
+    margin-left: 2px;
+    padding: 12px;
+    margin-top: 0px;
+    left: 60px;
+    bottom: 405px;
+    position: relative;
+}
+
+.college-search-container{
+    background-image:url(lecturer.jpg);
+    background-position: center;
+    border-radius: 80%;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-image: auto;
+    margin-top: 15px;
+}
+
+.result_school_name{
+    font-weight: bold;
+}
+
+.result_school_name:hover{
+    /* font-size: 20px; */
+    color: red;
+    cursor:pointer;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.chosen-result{
+    height: 100%;
+    width: 500px;
+    background-color: lightblue;
+    position: relative;
+    left: 600px;
+    bottom: 440px;
+}
+
+/* .country-question-form{
+    margin-left: 200px;
+    margin-right: 200px;
+
+} */
+
+#country-choices{
+    opacity: 1;
+    /* margin-top: 25px; */
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-image:url(background_bottom.gif);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.form-wrapper{
+    /* background-color: lightgreen; */
+    border-radius: 80%;
+    width: 400px;
+    height: 200px;
+    background-image: url(earth_apple.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* ANIMATIONS
+body h1 {
+    opacity: 0;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+}
+
+JQUERY: $("body h1").delay(1000).animate({"opacity": "1"}, 700);

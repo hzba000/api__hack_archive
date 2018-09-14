@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en">  
+    <HEAD>  
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta name="viewport" content="width=device-width">
+    </HEAD>
+
+    <BODY>
+        <!-- <button type="submit" class="btn"> HIT ME </button> -->
+        <header role="banner" aria-live="polite">
+                <h1>College Tuition Currency Converter</h1> 
+                
+                <div class="instructions">
+                    <p> Instructions</p>
+                    <p> Step 1: Choose a country </p>
+                    <p> Step 2: Search for a US College</p>
+                    <p> Step 3: Click on a college</p>
+                    <p> Step 4: View tuition in the currency of your chosen country</p> 
+                </div>   
+        </header>
+    
+    <main role="main" aria-live="polite">
+        <div class="input-div fade-in">
+            <div>
+             <form class="country-question-form">
+                    <fieldset>
+                        <legend> Choose your country </legend>
+                        <label class="country-question-label" for="country-choices"></label>
+                        <select name="country-choices" id="country-choices" required>
+                            <option value="" disabled selected>Select your option</option>
+                        </select>
+
+                        <span><button class="submit-button"> Submit Country </button></span>
+                    </fieldset>    
+                </form>
+            </div>
+    
+        
+            <div>
+                <form id="js-search-form">
+                    <fieldset>
+                     <legend>Search for your school </legend>
+                     <label for="js-search-box"></label>
+                     <input type="text" name="js-search-box" class="js-search-box" placeholder="Search..." required>
+                     <button type="submit">Submit School</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div> <h2 class="results-header hidden"> </h2></div>
+
+        <!-- <div class="flex-container fade-in"> -->
+
+            <div class="js-results-holder"></div>
+
+            <div class="chosen-result"></div>
+
+        <!-- </div> -->
+    </main>    
+
+        <!-- <div class="navigation-buttons hidden">
+            <button type="submit" class="btn"> Go Forward </button>
+            <button type="submit" class="backbtn"> Go Back </button>
+        </div> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </BODY>
+
+</HTML>
